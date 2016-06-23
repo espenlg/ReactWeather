@@ -26259,9 +26259,18 @@
 
 	var Examples = function Examples(props) {
 	  return React.createElement(
-	    'h3',
+	    'div',
 	    null,
-	    'Examples components'
+	    React.createElement(
+	      'h3',
+	      null,
+	      'Examples components!'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'Welcome to examples page!'
+	    )
 	  );
 	};
 
