@@ -26353,19 +26353,41 @@
 
 	var React = __webpack_require__(8);
 
+	var _require = __webpack_require__(166);
+
+	var Link = _require.Link;
+
+
 	var About = function About(props) {
 	  return React.createElement(
 	    'div',
 	    null,
 	    React.createElement(
-	      'h3',
-	      null,
+	      'h1',
+	      { className: 'text-center' },
 	      'About'
 	    ),
 	    React.createElement(
 	      'p',
 	      null,
-	      'Welcome to the about page.'
+	      'This is my first React app as a part of ',
+	      React.createElement(
+	        'a',
+	        { href: 'https://www.udemy.com/the-complete-react-web-app-developer-course', target: '_new' },
+	        'The Complete React Web App Developer Course'
+	      ),
+	      ' course at Udemy.com.'
+	    ),
+	    React.createElement(
+	      'p',
+	      null,
+	      'You\'ll find the source on ',
+	      React.createElement(
+	        'a',
+	        { href: 'https://github.com/espenlg/ReactWeather', target: '_new' },
+	        'GitHub'
+	      ),
+	      '.'
 	    )
 	  );
 	};
